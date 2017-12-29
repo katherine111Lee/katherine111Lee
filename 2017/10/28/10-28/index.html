@@ -122,17 +122,65 @@
 <div id="content-outer">
   <div id="content-inner">
     
+<article id="post">
+  <div class="post-page-title" style="background-color:#E0EEEE;background-image:url(/images/random/vateral-3.png)" >
+  <h2>如何将伪数组转化成真正的数组</h2>
+    
+  <p>作者:屋塔房里的小孩 &nbsp&nbsp 发布于:<time datetime="2017-10-27T16:00:00.000Z">
+          2017-10-28
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h3 id="什么是伪数组"><a href="#什么是伪数组" class="headerlink" title="什么是伪数组"></a>什么是伪数组</h3><p>伪数组从字面意义来看，就是说它不是真正的数组，虽然具有一般数组的length属性，但是却不能调用数组具有的push、pop等方法。这里与大家分享一下伪数组转化成真正数组的三种方法。<br>假如页面中写入:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;ul&gt;</span><br><span class="line">		&lt;li&gt;1&lt;/li&gt;</span><br><span class="line">		&lt;li&gt;2&lt;/li&gt;</span><br><span class="line">		&lt;li&gt;3&lt;/li&gt;</span><br><span class="line">		&lt;li&gt;4&lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">```	</span><br><span class="line">我们可以通过h5中新增的api来获得所有的页面元素并且会以数组形式呈现。</span><br></pre></td></tr></table></figure></p>
+<p>var lis=document.querySelectorAll(“li”);<br>```<br>此数组具有一般数组的length属性，如下图：<br><img src="/images/w-0.jpg" alt="lis"><br>但是如果我们写入：</p>
+<blockquote>
+<p>lis.push(1);<br>console.log(lis);</p>
+</blockquote>
+<p>会出现以下提示：<br><img src="/images/w-00.jpg" alt="lis1"><br>所以有时候我们必须要将伪数组转化为真正的数组来满足我们的某些需求。</p>
+<h4 id="1-赋给一个新的空数组"><a href="#1-赋给一个新的空数组" class="headerlink" title="1. 赋给一个新的空数组"></a>1. 赋给一个新的空数组</h4><pre><code>var arr=[];
+for(var i=0;i&lt;lis.length;i++){
+   arr.push(lis[i]);
+   }
+   console.log(arr);
+</code></pre><h4 id="2-利用数组的slice方法"><a href="#2-利用数组的slice方法" class="headerlink" title="2. 利用数组的slice方法"></a>2. 利用数组的slice方法</h4><pre><code>var arr1=Array.prototype.slice.call(lis);
+ console.log(arr1);
+arr1.push(1);
+console.log(arr1);
+</code></pre><p>会得到以下结果：<br><img src="/images/w-1.jpg" alt="lis2"></p>
+<h4 id="3-利用es6的from方法"><a href="#3-利用es6的from方法" class="headerlink" title="3. 利用es6的from方法"></a>3. 利用es6的from方法</h4><pre><code>var arr2=Array.from(lis);
+ console.log(arr2);
+arr2.push(2);
+console.log(arr2);
+</code></pre><p>会得到以下结果：<br><img src="/images/w-2.jpg" alt="lis3"><br>相信还有其他的方法来进行转化，我要继续学习研究一下啦！</p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
 
 
-<div class="tags">
-  
-    <div id="archive">
-        
-          <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo正式搭建/">hexo正式搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初识github/">初识github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/很酷/">很酷</a></li></ul>
-        
-    </div>
-  
-
+  <!-- Next Nav -->
+    
+  <a href="/2017/10/16/first-tech/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#什么是伪数组"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是伪数组</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-赋给一个新的空数组"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1. 赋给一个新的空数组</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-利用数组的slice方法"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 利用数组的slice方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-利用es6的from方法"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 利用es6的from方法</span></a></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
   </div>
 </div>
 <div id="bottom-outer">
