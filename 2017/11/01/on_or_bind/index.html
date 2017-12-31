@@ -121,56 +121,80 @@
 
 <div id="content-outer">
   <div id="content-inner">
-    <div id="recent-posts">
-  
-      <div class="recent-post-item lazy" style="background-color:#E0EEEE"   data-original="/images/random/vateral-14.png"  >
-        <a class="recent-post-link" href="/2017/10/12/instroduce/">
-        <div class="post-hover">
-          <!--title-->
-          <p class="post-title"><a href="/2017/10/12/instroduce/" >遇见你是我的小幸运</a></p>
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#E0EEEE;background-image:url(/images/random/vateral-4.png)" >
+  <h2>jQuery中on与bind有何区别</h2>
+    
+  <p>作者:屋塔房里的小孩 &nbsp&nbsp 发布于:<time datetime="2017-10-31T16:00:00.000Z">
+          2017-11-01
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h3 id="学习jQuery的原因"><a href="#学习jQuery的原因" class="headerlink" title="学习jQuery的原因"></a>学习jQuery的原因</h3><p>每一个学习Javascript的程序猿，都对jQuery不陌生。因为在工作中，如果用原生的JS和DOM来编写代码，会显得代码冗余。而jQuery的出现却很好的解决了这个问题。原来书长很长的代码，现在只需几行便可轻松解决。</p>
+<blockquote>
+<p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+</blockquote>
+<p>在学习jQuery库时，我们会遇到on()和bind()两种给对象绑定事件处理函数的方法。</p>
+<p>bind()–为jQuery对象内含元素添加一个或多个事件处理函数，有以下一些形式。</p>
+<p>1.bind(eventType, function)——其中eventType为事件类型，function为事件类型触发时，执行的代码块。</p>
+<blockquote>
+<p>$(“button”).bind(‘click’,function(){<br>console.log(“hello world”);<br>});</p>
+</blockquote>
+<p>2.bind(eventType, data, function)——为jQuery对象内含元素添加一个事件处理函数，支持可选的data参数。</p>
+<blockquote>
+<p>var handler = function(e){<br>$(this).css(“border”,”1px solid “+e.data)；<br>};<br>$(“img”).bind(‘mouseenter’,’blue’,handler).bind(‘mouseout’,’red’,handler)；</p>
+</blockquote>
+<p>鼠标移入图片时加上1像素蓝色的边框，鼠标移出图片时加上1像素红色的边框。</p>
+<p>3.bind(eventType,  function)，当所选对象对应多个事件处理函数时，可以通过事件处理函数的事件类型e.type进行区分。下面这种写法和上段代码效果是一样的。</p>
+<blockquote>
+<p>var handler = function(e) {<br>if(e.type == ‘mouseenter’) {<br>$(this).css(“border”, “1px solid blue”);<br>} else {<br>$(this).css(“border”, “1px solid red”)<br>};<br>};<br>$(“img”).bind(‘mouseenter mouseout’, handler);</p>
+</blockquote>
+<p>4.bind(map)——使用JavaScript对象字面量map为jQuery对象内含元素一次添加多个事件处理函数。</p>
+<blockquote>
+<p>var myHandler ={<br>‘mouseenter’:function(){console.log(“我是鼠标进入”)},<br>‘click’:function(){console.log(“我是鼠标点击”)},<br>‘mouseout’:function(){console.log(“我是鼠标出来”)}<br>}；<br>$(“img”).bind(myHandler);</p>
+</blockquote>
+<p>但是在实际开发工作中，人们往往更倾向于使用on()方法为对象添加事件处理函数，因为bind方法绑定的事件处理函数不会应用到后来添加到DOM中的新元素上。通俗的说，就是比如原来的图片已经添加上事件了，后来通过DOM操作创建出来的图片不会享有此事件。</p>
+<hr>
+<p>on()——支持自动绑定事件处理函数的方法，常用方法有以下两种形式。</p>
+<p>1.on(events，[selector]，[data]，function)——其中[]括号中的参数是可选的。events:一个或多个用空格分隔的事件类型和可选的命名空间。selector:一个选择器字符串用于过滤器的触发事件的选择器元素的后代。</p>
+<blockquote>
+<p>$(“button”).on(‘click’,function(){<br>console.log(“hello world”);<br>});</p>
+</blockquote>
+<p>2.on(map,[selector], [data]):其中map为事件对象，可以包含一个或多个事件类型。</p>
+<blockquote>
+<p>var map = {<br>‘mouseenter’:function(){<br>$(this).css(“border”,”1px solid red”);<br>},<br>‘mouseout’:function(){<br>$(this).css(“border”,”none”);<br>}<br>}<br>$(document).on(map,’img’);</p>
+</blockquote>
+<p>通过对比，可以看出.on方法比.bind方法多一个参数’selector’,那么这个selector参数的好处是什么?好处就在于.on方法能够动态地为添加的元素也能绑上指定事件。例如通过on（map,’img’）这种方法为图片绑定的事件，即使是后来创建出来的图片对象，也会享有此事件处理函数。</p>
 
-          <!--date-->
-          
-            <p class="post-time">屋塔房里的小孩 &nbsp &nbsp 发布于:<time datetime="2017-10-11T16:00:00.000Z">
-              2017-10-12
-            </time>
-            </p>
-          
+  </div>
+  <!--评论块-->
+    
 
-          <!--tags-->
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
 
-          标签:
-            
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/很酷/">很酷</a></li></ul>
-            
-          <!--分类-->
 
-          分类:
-            
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/个人简介/">个人简介</a></li></ul>
-            
-
-          <!--excerpt-->
-          <div class="post-excerpt">
-            <p>
-              摘要：
-              
-                有时间搭建了属于自己的博客了，代替了我之前使用纸质版日记的方式，大家也可以通过github与我交流。
-个人介绍1996年出生于河南省登封市，是一个地地道道的河南人，从小受传统文化的熏陶。由于身处历史名城...
-              
-            </p>
-          </div>
-          <div class="post-more"><a href="/2017/10/12/instroduce/" >全文阅读</a></div>
-        </div>
-        </a>
-      </div>
-  
-  <nav class="paging">
-    <span class="page-number current">1</span>
+  <!-- Next Nav -->
+    
+  <a href="/2017/10/28/10-28/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
 </nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#学习jQuery的原因"><span class="post-toc-number">1.</span> <span class="post-toc-text">学习jQuery的原因</span></a></li></ol>
 </div>
-
-
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
   </div>
 </div>
 <div id="bottom-outer">
