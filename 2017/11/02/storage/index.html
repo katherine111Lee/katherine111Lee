@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="null">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="一路向北">
+  <meta name="description" content="欢迎来到我的blog 我在这里与你分享我的故事 快来一起玩耍吧">
+  
+  <title>欢迎来到屋塔房</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/header-bg.png);background-color:#E0EEEE">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>屋塔房里的小孩</p>
+    <div class="nav-link">
+        
+        
+        <a  href="https://github.com/katherine111Lee" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:https://mail.qq.com/cgi-bin/frame_html?sid=P5bmUuRjp3s4JxRO&amp;r=3a5104c9aa290da77e186bcafe16199b"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://weibo.com/wutafanglee" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="https://www.zhihu.com/people/an-jing-93-88-54/activities" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">7</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/jQuery/">jQuery<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/个人简介/">个人简介<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/技术干货/">技术干货<span class="category-count">4</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#E0EEEE;background-image:url(/images/random/vateral-7.png)" >
+  <h2>html5中新增的web存储</h2>
+    
+  <p>作者:屋塔房里的小孩 &nbsp&nbsp 发布于:<time datetime="2017-11-01T16:00:00.000Z">
+          2017-11-02
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h4 id="1-官方介绍"><a href="#1-官方介绍" class="headerlink" title="1.官方介绍"></a>1.官方介绍</h4><p>在客户端存储数据，HTML5 提供了两种在客户端存储数据的新方法：</p>
+<h5 id="localStorage-没有时间限制的数据存储"><a href="#localStorage-没有时间限制的数据存储" class="headerlink" title="localStorage - 没有时间限制的数据存储"></a>localStorage - 没有时间限制的数据存储</h5><h5 id="sessionStorage-针对一个-session-的数据存储"><a href="#sessionStorage-针对一个-session-的数据存储" class="headerlink" title="sessionStorage - 针对一个 session 的数据存储"></a>sessionStorage - 针对一个 session 的数据存储</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;之前，这些都是由 cookie 完成的。但是 “cookie” 不适合大量数据的存储，因为它们由每个对服务器的请求来传递这使得 “cookie” 速度很慢而且效率也不高。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。</p>
+<p>对于不同的网站，数据存储于不同的区域，并且一个网站只能访问其自身的数据。</p>
+<h4 id="2-个人总结"><a href="#2-个人总结" class="headerlink" title="2.个人总结"></a>2.个人总结</h4><h6 id="2-1-sessionStorage"><a href="#2-1-sessionStorage" class="headerlink" title="2.1 sessionStorage"></a>2.1 sessionStorage</h6><p>window.sessionStorage对象<br>session临时回话，从页面打开到页面关闭的时间段<br>窗口的临时存储，页面关闭，本地存储消失</p>
+<h6 id="2-2-localStorage"><a href="#2-2-localStorage" class="headerlink" title="2.2 localStorage"></a>2.2 localStorage</h6><p> window.localStorage对象<br>永久存储（可以手动删除数据）</p>
+<h5 id="2-3-Storage的特点"><a href="#2-3-Storage的特点" class="headerlink" title="2.3 Storage的特点"></a>2.3 Storage的特点</h5><p>存储量限制 ( 5M )<br>客户端完成，不会请求服务器处理<br>sessionStorage数据是不共享、 localStorage共享</p>
+<h5 id="2-4-cookie"><a href="#2-4-cookie" class="headerlink" title="2.4 cookie"></a>2.4 cookie</h5><p>cookie 是一小段文本信息，伴随用户请求，在web服务器和浏览器之间传递。用户每次访问站点的时候，web应用程序都可以读取cookie包含的信息。<br>假设在用户请求您的网站的某个页面时，您的服务器不仅是返回请求的页面。同时也返回一个包含日期和时间的cookie。用户的浏览器在获得页面的同时也获得了cookie.并且cookie保存在客户端的cookie文件夹中。<br>指某些网站为了辨别用户身份、进行session（会话）跟踪而储存在用户本地终端上的数据（通常经过加密）</p>
+<h5 id="2-5-Cookie的特点"><a href="#2-5-Cookie的特点" class="headerlink" title="2.5 Cookie的特点"></a>2.5 Cookie的特点</h5><p>大多数浏览器支持最多可达4096字节（大约4KB）cookie。浏览器还限制了，一个站点可以在客户端保存cookie数。大多数浏览器允许每个站点最多放40个cookie.如果试图保存更多的cookie,那么先前的cookie将被删除。还有些浏览器会对来自所有站点cookie总数限制，这个限制通常为300个。</p>
+<h5 id="2-6-本地存储的方法"><a href="#2-6-本地存储的方法" class="headerlink" title="2.6 本地存储的方法"></a>2.6 本地存储的方法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setItem()</span><br></pre></td></tr></table></figure>
+<p>设置数据，key\value类型，类型都是字符串<br>可以用获取属性的形式操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getItem()</span><br></pre></td></tr></table></figure></p>
+<p>获取数据，通过key来获取到相应的value<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">removeItem()</span><br></pre></td></tr></table></figure></p>
+<p>删除数据，通过key来删除相应的value<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clear()</span><br></pre></td></tr></table></figure></p>
+<p>删除全部存储的值</p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2017/10/30/10-30/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-官方介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.官方介绍</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#localStorage-没有时间限制的数据存储"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">localStorage - 没有时间限制的数据存储</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#sessionStorage-针对一个-session-的数据存储"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">sessionStorage - 针对一个 session 的数据存储</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-个人总结"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.个人总结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-1-sessionStorage"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">2.1 sessionStorage</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-2-localStorage"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">2.2 localStorage</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-3-Storage的特点"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">2.3 Storage的特点</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-4-cookie"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.4 cookie</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-5-Cookie的特点"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">2.5 Cookie的特点</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-6-本地存储的方法"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">2.6 本地存储的方法</span></a></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#E0EEEE"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p style="line-height: 45px">Copyright ©  2017  欢迎来到屋塔房</p>
+<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
