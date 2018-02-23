@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="null">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="一路向北">
+  <meta name="description" content="欢迎来到我的blog 我在这里与你分享我的故事 快来一起玩耍吧">
+  
+  <title>欢迎来到屋塔房</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/header-bg.png);background-color:#E0EEEE">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>屋塔房里的小孩</p>
+    <div class="nav-link">
+        
+        
+        <a  href="https://github.com/katherine111Lee" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:https://mail.qq.com/cgi-bin/frame_html?sid=P5bmUuRjp3s4JxRO&amp;r=3a5104c9aa290da77e186bcafe16199b"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://weibo.com/wutafanglee" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="https://www.zhihu.com/people/an-jing-93-88-54/activities" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">5</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">7</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/Array/">Array<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/jQuery/">jQuery<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/swiper插件/">swiper插件<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/个人简介/">个人简介<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/技术干货/">技术干货<span class="category-count">4</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/网络基础/">网络基础<span class="category-count">1</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#E0EEEE;background-image:url(/images/random/vateral-11.png)" >
+  <h2>Vue中的动态传参</h2>
+    
+  <p>作者:屋塔房里的小孩 &nbsp&nbsp 发布于:<time datetime="2017-11-11T16:00:00.000Z">
+          2017-11-12
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <p>在使用Vue制作网页时，常常要用到选项卡或者点击跳转到详情页的需求，点击跳转到详情页的需求可以使用路由来实现，这里以选项卡为例。</p>
+<h5 id="1-页面元素显示"><a href="#1-页面元素显示" class="headerlink" title="1.页面元素显示"></a>1.页面元素显示</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;hot_lb clearfix&quot;&gt;</span><br><span class="line">    &lt;router-view :hots=&quot;hots&quot;&gt;&lt;/router-view&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="2-页面元素显示接着我们要在script部分中定义一个模板，在此模板中定义好页面元素的样式和获取到的内容"><a href="#2-页面元素显示接着我们要在script部分中定义一个模板，在此模板中定义好页面元素的样式和获取到的内容" class="headerlink" title="2.页面元素显示接着我们要在script部分中定义一个模板，在此模板中定义好页面元素的样式和获取到的内容"></a>2.页面元素显示接着我们要在script部分中定义一个模板，在此模板中定义好页面元素的样式和获取到的内容</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">let Hots=&#123;</span><br><span class="line">        template:&quot;&lt;div&gt;&lt;div v-for=&apos;hot in hots&apos; v-show=&apos;hot.cid==$route.params.cid&apos;&gt;&quot;+&quot;&lt;div class=&apos;hot_lb1&apos;&gt;&lt;img :src=&apos;hot.img&apos;&gt;&quot; +</span><br><span class="line">       &quot;&lt;/div&gt;&lt;div class=&apos;hot_lb2&apos;&gt;&quot;+&quot;&lt;h3&gt;&#123;&#123;hot.name&#125;&#125;&lt;/h3&gt;\n&quot; +</span><br><span class="line">        &quot;                &lt;span&gt;by&amp;nbsp;&amp;nbsp;&#123;&#123;hot.fname&#125;&#125;&lt;/span&gt;\n&quot; +</span><br><span class="line">        &quot;                &lt;p&gt;&#123;&#123;hot.desc&#125;&#125;&lt;/p&gt;&quot;+&quot;&lt;div class=&apos;hot_lb2_text&apos;&gt;\n&quot; +</span><br><span class="line">        &quot;           &lt;div class=&apos;spanWrap&apos;&gt;&quot;+&quot;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;em&gt;&#123;&#123;hots[0].type&#125;&#125;&lt;/em&gt;&lt;/span&gt;\n&quot; +</span><br><span class="line">        &quot;                &lt;span&gt;&lt;i&gt;&lt;/i&gt;卫视推荐&lt;/span&gt;&quot;+&quot;&lt;/div&gt;\n&quot; +</span><br><span class="line">        &quot;           &lt;div class=&apos;spanWrap1&apos;&gt;&quot;+&quot;&lt;span&gt;&lt;i&gt;&#123;&#123;hot.sp&#125;&#125;%&lt;/i&gt;&lt;em&gt;进度&lt;/em&gt;&lt;/span&gt;\n&quot; +</span><br><span class="line">        &quot;                &lt;span&gt;&lt;i&gt;￥&#123;&#123;hot.rprice&#125;&#125;&lt;/i&gt;&lt;em&gt;支持金额&lt;/em&gt;&lt;/span&gt;\n&quot; +</span><br><span class="line">        &quot;                &lt;span&gt;&lt;i&gt;&#123;&#123;hot.rnum&#125;&#125;&lt;/i&gt;&lt;em&gt;支持者&lt;/em&gt;&lt;/span&gt;\n&quot; +</span><br><span class="line">        &quot;                &lt;span&gt;&lt;i&gt;&#123;&#123;hot.rday&#125;&#125;&lt;/i&gt;&lt;em&gt;剩余天数&lt;/em&gt;&lt;/span&gt;&quot;+&quot;&lt;/div&gt;\n&quot; +</span><br><span class="line">        &quot;           &lt;/div&gt;\n&quot; +</span><br><span class="line">        &quot;           &lt;/div&gt;\n&quot; +</span><br><span class="line">        &quot;        &lt;/div&gt;\n&quot; +</span><br><span class="line">        &quot;        &lt;/div&gt;&quot;,</span><br></pre></td></tr></table></figure>
+<h5 id="3-此时，组件的父传子还需要使用props来将页面元素和从后台动态获取的数据动态联系起来。即在模板中再加入："><a href="#3-此时，组件的父传子还需要使用props来将页面元素和从后台动态获取的数据动态联系起来。即在模板中再加入：" class="headerlink" title="3.此时，组件的父传子还需要使用props来将页面元素和从后台动态获取的数据动态联系起来。即在模板中再加入："></a>3.此时，组件的父传子还需要使用props来将页面元素和从后台动态获取的数据动态联系起来。即在模板中再加入：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">props:[&apos;hots&apos;]</span><br></pre></td></tr></table></figure>
+<h5 id="4-同时，路由的路径还要定义好："><a href="#4-同时，路由的路径还要定义好：" class="headerlink" title="4.同时，路由的路径还要定义好："></a>4.同时，路由的路径还要定义好：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const router=new VueRouter(&#123;</span><br><span class="line">	routes=[</span><br><span class="line">       &#123;path:&apos;/hots/:cid&apos;,component:Hots,name:&apos;hots&apos;&#125;,   //  用cid这个属性来控制动态显示</span><br><span class="line">       &#123;path:&apos;/&apos;,redirect:&apos;/hots/1&apos;&#125;      // 默认为显示第一张</span><br><span class="line">	]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>到这里，基本选项卡的功能就实现完成了。</p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2017/11/05/11-05/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-页面元素显示"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.页面元素显示</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-页面元素显示接着我们要在script部分中定义一个模板，在此模板中定义好页面元素的样式和获取到的内容"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.页面元素显示接着我们要在script部分中定义一个模板，在此模板中定义好页面元素的样式和获取到的内容</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-此时，组件的父传子还需要使用props来将页面元素和从后台动态获取的数据动态联系起来。即在模板中再加入："><span class="post-toc-number">3.</span> <span class="post-toc-text">3.此时，组件的父传子还需要使用props来将页面元素和从后台动态获取的数据动态联系起来。即在模板中再加入：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-同时，路由的路径还要定义好："><span class="post-toc-number">4.</span> <span class="post-toc-text">4.同时，路由的路径还要定义好：</span></a></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#E0EEEE"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p style="line-height: 45px">Copyright ©  2017  欢迎来到屋塔房</p>
+<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
