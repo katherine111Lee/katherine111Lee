@@ -121,55 +121,52 @@
 
 <div id="content-outer">
   <div id="content-inner">
-    <div id="recent-posts">
-  
-      <div class="recent-post-item lazy" style="background-color:#E0EEEE"   data-original="/images/random/vateral-9.png"  >
-        <a class="recent-post-link" href="/2017/11/20/11-02/">
-        <div class="post-hover">
-          <!--title-->
-          <p class="post-title"><a href="/2017/11/20/11-02/" >http返回的状态码</a></p>
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#E0EEEE;background-image:url(/images/random/vateral-12.png)" >
+  <h2>JS中的去抖动和节流</h2>
+    
+  <p>作者:屋塔房里的小孩 &nbsp&nbsp 发布于:<time datetime="2017-10-20T16:00:00.000Z">
+          2017-10-21
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <p>什么是节流和去抖？</p>
+<h5 id="1-节流"><a href="#1-节流" class="headerlink" title="1.节流"></a>1.节流</h5><p>就是拧紧水龙头让水少流一点，但是不是不让水流了。在监听页面的scoll事件，或者监听鼠标的mousemove事件，这些事件对应的处理方法相当于水，由于scroll和mousemove在鼠标移动的时候会被浏览器频繁的触发，会导致对应的事件也会被频繁的触发（水流的太快了），这样就会造成很大的浏览器资源开销，而且好多中间的处理是不必要的，这样就会造成浏览器卡顿的现象，这时候就需要节流，如何节流呢？我们无法做到让浏览器不去触发对应的事件，但是可以做到让处理事件的方法执行频率减少，从而减少对应的处理开销。即保证在规定的某段时间内只能出发以此事件处理函数。</p>
+<h5 id="1-去抖"><a href="#1-去抖" class="headerlink" title="1.去抖"></a>1.去抖</h5><p>假设我们的一个输入框，输入内容的同时可能会去后台查询对应的联想词，如果用户输入的同时，频繁地触发input事件，然后频繁的向后台发送请，那么直到用户输入完成时，之前的请求都应该是多余的，假设网络慢一点，后台返回的数据比较慢，那么显示的联想词可能会出现频繁的变换，直到最后的一个请求返回。这个时候就可以在一定时间内监听是否再次输入，如果没有再次输入则认为本次输入完成，发送请求，否则就是判定用户仍在输入，不发送请求。</p>
+<h5 id="去抖和节流是不同的，因为节流虽然中间的处理函数被限制了，但是只是减少了频率，而去抖则把中间的处理函数全部过滤掉了，只执行规判定时间内的最后一个事件。"><a href="#去抖和节流是不同的，因为节流虽然中间的处理函数被限制了，但是只是减少了频率，而去抖则把中间的处理函数全部过滤掉了，只执行规判定时间内的最后一个事件。" class="headerlink" title="去抖和节流是不同的，因为节流虽然中间的处理函数被限制了，但是只是减少了频率，而去抖则把中间的处理函数全部过滤掉了，只执行规判定时间内的最后一个事件。"></a>去抖和节流是不同的，因为节流虽然中间的处理函数被限制了，但是只是减少了频率，而去抖则把中间的处理函数全部过滤掉了，只执行规判定时间内的最后一个事件。</h5>
+  </div>
+  <!--评论块-->
+    
 
-          <!--date-->
-          
-            <p class="post-time">屋塔房里的小孩 &nbsp &nbsp 发布于:<time datetime="2017-11-19T16:00:00.000Z">
-              2017-11-20
-            </time>
-            </p>
-          
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/2017/10/28/10-28/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
 
-          <!--tags-->
 
-          标签:
-            
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络基础/">网络基础</a></li></ul>
-            
-          <!--分类-->
-
-          分类:
-            
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/网络基础/">网络基础</a></li></ul>
-            
-
-          <!--excerpt-->
-          <div class="post-excerpt">
-            <p>
-              摘要：
-              
-                
-              
-            </p>
-          </div>
-          <div class="post-more"><a href="/2017/11/20/11-02/" >全文阅读</a></div>
-        </div>
-        </a>
-      </div>
-  
-  <nav class="paging">
-    <span class="page-number current">1</span>
+  <!-- Next Nav -->
+    
+  <a href="/2017/10/20/on_or_bind/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
 </nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-节流"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.节流</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-去抖"><span class="post-toc-number">2.</span> <span class="post-toc-text">1.去抖</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#去抖和节流是不同的，因为节流虽然中间的处理函数被限制了，但是只是减少了频率，而去抖则把中间的处理函数全部过滤掉了，只执行规判定时间内的最后一个事件。"><span class="post-toc-number">3.</span> <span class="post-toc-text">去抖和节流是不同的，因为节流虽然中间的处理函数被限制了，但是只是减少了频率，而去抖则把中间的处理函数全部过滤掉了，只执行规判定时间内的最后一个事件。</span></a></li></ol>
 </div>
-
-
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
   </div>
 </div>
 <div id="bottom-outer">

@@ -121,55 +121,50 @@
 
 <div id="content-outer">
   <div id="content-inner">
-    <div id="recent-posts">
-  
-      <div class="recent-post-item lazy" style="background-color:#E0EEEE"   data-original="/images/random/vateral-9.png"  >
-        <a class="recent-post-link" href="/2017/11/20/11-02/">
-        <div class="post-hover">
-          <!--title-->
-          <p class="post-title"><a href="/2017/11/20/11-02/" >http返回的状态码</a></p>
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#E0EEEE;background-image:url(/images/random/vateral-9.png)" >
+  <h2>http返回的状态码</h2>
+    
+  <p>作者:屋塔房里的小孩 &nbsp&nbsp 发布于:<time datetime="2017-11-19T16:00:00.000Z">
+          2017-11-20
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h5 id="HTTP状态码（HTTP-Status-Code）是用以表示网页服务器HTTP响应状态的3位数字代码"><a href="#HTTP状态码（HTTP-Status-Code）是用以表示网页服务器HTTP响应状态的3位数字代码" class="headerlink" title="HTTP状态码（HTTP Status Code）是用以表示网页服务器HTTP响应状态的3位数字代码"></a>HTTP状态码（HTTP Status Code）是用以表示网页服务器HTTP响应状态的3位数字代码</h5><p>1xx  信息，服务器收到请求，需要请求者继续执行操作。<br>     由于 HTTP/1.0协议中没有定义任何1xx状态码，所以除非在某些试验条件下，服务器禁止向此类客户端发送 1xx响应。(目前使用http1.1协议)。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">100 : 继续。客户端应继续其请求.</span><br><span class="line">101 ：切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议.</span><br></pre></td></tr></table></figure></p>
+<p>2xx   成功，操作被成功接收并处理<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">200 : 请求成功（一般用于post或get请求）.</span><br><span class="line">201 ：已创建。成功请求并创建了新的资源.</span><br><span class="line">202 ：已接受。已经接受请求，但未处理完成.</span><br></pre></td></tr></table></figure></p>
+<p>3xx   重定向，需要进一步的操作以完成请求<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">300 ：多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择.</span><br><span class="line">301 ：永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替.</span><br><span class="line">302 : 临时移动。但资源只是临时被移动。客户端应继续使用原有URI.</span><br></pre></td></tr></table></figure></p>
+<p>4xx   客户端错误，请求包含语法错误或无法完成请求<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">400 : 客户端请求的语法错误，服务器无法理解.</span><br><span class="line">      1、语义有误，当前请求无法被服务器理解。除非进行修改，否则客户端不应该重复提交这个请求; 　　</span><br><span class="line">      2、请求参数有误.</span><br><span class="line">401 : 请求要求用户的身份认证.</span><br><span class="line">403 : 服务器理解请求客户端的请求，但是拒绝执行此请求.</span><br><span class="line">404 : 服务器无法根据客户端的请求找到资源（网页）.</span><br></pre></td></tr></table></figure></p>
+<p>5xx   服务器错误，服务器在处理请求的过程中发生了错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">500 : 服务器内部错误，无法完成请求.</span><br><span class="line">501 : 服务器不支持请求的功能，无法完成请求.</span><br><span class="line">502 : 充当网关或代理的服务器，从远端服务器接收到了一个无效的请求.</span><br><span class="line">505 : 服务器不支持请求的HTTP协议的版本，无法完成处理.</span><br></pre></td></tr></table></figure></p>
 
-          <!--date-->
-          
-            <p class="post-time">屋塔房里的小孩 &nbsp &nbsp 发布于:<time datetime="2017-11-19T16:00:00.000Z">
-              2017-11-20
-            </time>
-            </p>
-          
+  </div>
+  <!--评论块-->
+    
 
-          <!--tags-->
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
 
-          标签:
-            
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络基础/">网络基础</a></li></ul>
-            
-          <!--分类-->
 
-          分类:
-            
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/网络基础/">网络基础</a></li></ul>
-            
-
-          <!--excerpt-->
-          <div class="post-excerpt">
-            <p>
-              摘要：
-              
-                
-              
-            </p>
-          </div>
-          <div class="post-more"><a href="/2017/11/20/11-02/" >全文阅读</a></div>
-        </div>
-        </a>
-      </div>
-  
-  <nav class="paging">
-    <span class="page-number current">1</span>
+  <!-- Next Nav -->
+    
+  <a href="/2017/11/12/11-12/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
 </nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#HTTP状态码（HTTP-Status-Code）是用以表示网页服务器HTTP响应状态的3位数字代码"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTTP状态码（HTTP Status Code）是用以表示网页服务器HTTP响应状态的3位数字代码</span></a></li></ol>
 </div>
-
-
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
   </div>
 </div>
 <div id="bottom-outer">
